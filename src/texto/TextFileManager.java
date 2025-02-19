@@ -2,6 +2,7 @@ package texto;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class TextFileManager {
@@ -33,4 +34,23 @@ public class TextFileManager {
 
             return data;
         }
+
+    public static void write(List<String> linesToBeStored) {
+        File datosTXT = new File("Datos.txt");
+        try {
+            BufferedWriter writer = new BufferedWriter(new FileWriter(datosTXT));
+
+            boolean isEOF = false;
+            Iterator<String> itLine = linesToBeStored.iterator();
+            while(itLine.hasNext()) {
+                String newLine = itLine.next();
+                writer.write(newLine);
+            }
+            writer.close();
+        } catch(FileNotFoundException fileNotFoundException) {
+            System.err.println("😱 File not found!");
+        } catch(IOException ioException) {
+            System.err.println("😱 IO error was found!");
+        }
+    }
 }
