@@ -44,7 +44,7 @@ public class TextFileManager {
             Iterator<String> itLine = linesToBeStored.iterator();
             while(itLine.hasNext()) {
                 String newLine = itLine.next();
-                writer.write(newLine);
+                writer.write(newLine + "\n");
             }
             writer.close();
         } catch(FileNotFoundException fileNotFoundException) {
