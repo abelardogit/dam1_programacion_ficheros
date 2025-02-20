@@ -42,48 +42,6 @@ public class HTMLFileManager {
         }
     }
 
-    public static void createCSS() {
-
-        File cssFile = new File("Increibles.css");
-
-        String cssContent = """
-                .parent {
-                    display: flex;
-                    background-color: DodgerBlue;
-                }
-                 \s
-                .parent > div {
-                    background-color: #f1f1f1;
-                    margin: 10px;
-                    padding: 20px;
-                    font-size: 30px;
-                    flex-flow: wrap column;
-                }
-                
-                @media only screen and (min-width: 1200px) {
-                    .parent {
-                        display: block;
-                        background-color: black;
-                    }
-                    .parent > div {
-                        background-color: cyan;
-                      }
-                }
-        """;
-
-        StringBuilder sb = new StringBuilder();
-        sb.append(cssContent);
-
-        try {
-            BufferedWriter writer = new BufferedWriter(new FileWriter(cssFile));
-            writer.write(sb.toString());
-            writer.close();
-        } catch(FileNotFoundException fileNotFoundException) {
-            System.err.println("😱 File not found!");
-        } catch(IOException ioException) {
-            System.err.println("😱 IO error was found!");
-        }
-    }
 
     private static String getHTMLContent() {
         return """
