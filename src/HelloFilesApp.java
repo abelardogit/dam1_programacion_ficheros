@@ -1,3 +1,5 @@
+import model.Persona;
+import texto.HTMLFileManager;
 import texto.TextFileManager;
 
 import java.util.ArrayList;
@@ -7,6 +9,7 @@ import java.util.List;
 public class HelloFilesApp {
     public static void main(String[] args) {
         text();
+        html();
     }
 
     private static void text() {
@@ -28,5 +31,21 @@ public class HelloFilesApp {
         newLines.add("Nueva línea");
         newLines.add("Otra nueva línea");
         TextFileManager.write(newLines);
+    }
+
+    private static void html() {
+        List<Persona> personas = getPersona();
+        HTMLFileManager.createHTML(personas);
+    }
+
+    private static List<Persona> getPersona() {
+        List<Persona> personas = new ArrayList<>();
+
+        personas.add(new Persona("MrIncreible", 30));
+        personas.add(new Persona("MrsIncreible", 45));
+        personas.add(new Persona("BabyIncreible", 1));
+        personas.add(new Persona("Prozono", 20));
+
+        return personas;
     }
 }
