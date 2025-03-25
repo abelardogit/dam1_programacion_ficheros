@@ -15,6 +15,12 @@ public class Persona {
         this.age = age;
     }
 
+    public Persona(String id, String fullName, int age) {
+        this.id = UUID.fromString(id);
+        this.fullName = fullName;
+        this.age = age;
+    }
+
     public UUID getId() {
         return id;
     }
@@ -34,5 +40,9 @@ public class Persona {
                 ", fullName='" + fullName + '\'' +
                 ", age=" + age +
                 '}';
+    }
+
+    public String toCSV() {
+        return id + ";" + fullName + ";" + age + "\n";
     }
 }
