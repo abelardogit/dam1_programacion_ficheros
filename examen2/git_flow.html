@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Global stylesheets -->
+    <link href="https://www.abelardolg.com/template/v4/assets/fonts/inter/inter.css" rel="stylesheet" type="text/css">
+    <link href="https://www.abelardolg.com/template/v4/assets/icons/phosphor/styles.min.css" rel="stylesheet" type="text/css">
+    <link href="https://www.abelardolg.com/template/v4/html/layout_1/full/assets/css/ltr/all.min.css" id="stylesheet" rel="stylesheet" type="text/css">
+    <link href="https://www.abelardolg.com/docencia/dam/1/programacion/e/2/assets/css/hotel.css" rel="stylesheet" type="text/css">
+    <!-- /global stylesheets -->
+    <script src="https://www.abelardolg.com/template/v4/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="https://www.abelardolg.com/template/v4/html/layout_1/full/assets/js/app.js"></script>
+    <!-- /core JS files -->
+
+    <!-- Theme JS files -->
+    <script src="https://www.abelardolg.com/template/v4/assets/js/jquery/jquery.min.js"></script>
+    <script src="https://www.abelardolg.com/template/v4/assets/js/vendor/forms/wizards/steps.min.js"></script>
+    <script src="https://www.abelardolg.com/template/v4/assets/js/vendor/forms/validation/validate.min.js"></script>
+
+    <script src="https://www.abelardolg.com/template/v4/html/layout_1/full/assets/js/app.js"></script>
+    <script src="https://www.abelardolg.com/docencia/dam/1/programacion/e/2/assets/js/hotel.js"></script>
+    <!-- /theme JS files -->
+
+    <title>1.º DAM | 2.ª evaluación | Programación</title>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-dark navbar-expand-lg navbar-static border-bottom border-bottom-white border-opacity-10">
+        <div class="container-fluid">
+            <div class="d-flex d-lg-none me-2">
+                <button type="button" class="navbar-toggler sidebar-mobile-main-toggle rounded-pill">
+                    <i class="ph-list"></i>
+                </button>
+            </div>
+
+            <div class="navbar-brand flex-1 flex-lg-0"></div>
+
+            <ul class="nav flex-row justify-content-end order-1 order-lg-2">
+                <li class="nav-item nav-item-dropdown-lg dropdown ms-lg-2">
+                    <a href="#" class="navbar-nav-link align-items-center rounded-pill p-1" data-bs-toggle="dropdown">
+                        <div class="status-indicator-container">
+                            <img src="https://static.vecteezy.com/system/resources/previews/009/292/244/non_2x/default-avatar-icon-of-social-media-user-vector.jpg" class="w-32px h-32px rounded-pill" alt="">
+                            <span class="status-indicator bg-success"></span>
+                        </div>
+                        <span class="d-none d-lg-inline-block mx-lg-2">Abelardo León González</span>
+                    </a>
+
+                </li>
+            </ul>
+        </div>
+        <!-- /main navbar -->
+    </nav>
+</header>
+<main class="page-content">
+    <aside class="sidebar sidebar-dark sidebar-main sidebar-expand-lg">
+        <!-- Sidebar header -->
+        <section class="sidebar-section">
+            <article class="sidebar-section-body d-flex justify-content-center">
+                <h5 class="sidebar-resize-hide flex-grow-1 my-auto">Enunciado</h5>
+
+                <div>
+                    <button type="button" class="btn btn-flat-white btn-icon btn-sm rounded-pill border-transparent sidebar-control sidebar-main-resize d-none d-lg-inline-flex">
+                        <i class="ph-arrows-left-right"></i>
+                    </button>
+
+                    <button type="button" class="btn btn-flat-white btn-icon btn-sm rounded-pill border-transparent sidebar-mobile-main-toggle d-lg-none">
+                        <i class="ph-x"></i>
+                    </button>
+                </div>
+            </article>
+        </section>
+        <!-- /sidebar header -->
+
+<!--        &lt;!&ndash; main navigation &ndash;&gt;-->
+<!--        <section>-->
+<!--            <ul class="nav nav-sidebar" data-nav-type="accordion">-->
+<!--                &lt;!&ndash; Retos &ndash;&gt;-->
+<!--                <li class="nav-item">-->
+<!--                    <a href="git_flow.html" class="nav-link active">-->
+<!--                        <i class="ph ph-git-branch"></i>-->
+<!--                        <span>Flujo git</span>-->
+<!--                    </a>-->
+<!--                    <a href="1_reto.html" class="nav-link">-->
+<!--                        <i class="ph-swatches"></i>-->
+<!--                        <span>Reto 1</span>-->
+<!--                    </a>-->
+<!--                    <a href="2_reto.html" class="nav-link">-->
+<!--                        <i class="ph-swatches"></i>-->
+<!--                        <span>Reto 2</span>-->
+<!--                    </a>-->
+<!--                    <a href="3_reto.html" class="nav-link">-->
+<!--                        <i class="ph-swatches"></i>-->
+<!--                        <span>Reto 3</span>-->
+<!--                    </a>-->
+<!--                    <a href="4_reto.html" class="nav-link">-->
+<!--                        <i class="ph-swatches"></i>-->
+<!--                        <span>Reto 4</span>-->
+<!--                    </a>-->
+<!--                    <a href="5_reto.html" class="nav-link">-->
+<!--                        <i class="ph-swatches"></i>-->
+<!--                        <span>Reto 5</span>-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </section>-->
+<!--        &lt;!&ndash; /main navigation &ndash;&gt;-->
+    </aside>
+    <section class="content-wrapper">
+        <!-- Inner content -->
+        <section class="content-inner">
+            <!-- Page header -->
+            <div class="page-header page-header-light shadow">
+                <div class="page-header-content d-lg-flex border-top">
+                    <div class="d-flex">
+                        <div class="breadcrumb py-2">
+                            <a href="#" class="breadcrumb-item"><i class="ph-house"></i></a>
+                            <a href="index.html" class="breadcrumb-item">1.º DAM</a>
+                            <span class="breadcrumb-item active">Enunciado</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /page header -->
+            <!-- Content area -->
+            <section class="content">
+                <!-- Content area -->
+                    <!-- Starting step -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h1 class="mb-0">Hotel ALOHA-RTE</h1>
+                        </div>
+
+                        <form class="wizard-form steps-starting-step" action="#">
+                            <h6>Kick-OFF</h6>
+                            <fieldset data-step-start>
+                                <div class="row">
+
+                                    <div class="card">
+                                        <div class="card-body text-center">
+                                            <h2>Introducción</h2>
+                                        </div>
+                                        <div class="card-body">
+                                            <section style="margin-bottom: 300px">
+                                                <div class="card-body text-center">
+                                                    <h2>El equipo de desarrollo</h2>
+                                                </div>
+                                                <p>
+                                                    Te ha contratado la <abbr title="unión temporal de empresas">UTE</abbr>
+                                                    <abbr title="Siempre Estarás Picando Código">SEPC</abbr>, formada por
+                                                    compañías internacionales formada por profesionales del desarrollo
+                                                    del software de varios países, entre ellos Brasil, España, Perú y
+                                                    Ecuador.
+                                                    El equipo de RR. HH. de esta UTE te pide que te reúnas con
+                                                    <a href="#SEPC_CTO">tu CTO.</a>
+                                                </p>
+                                            </section>
+                                            <section id="SEPC_CTO" style="margin-bottom: 300px">
+                                                <div class="card-body text-center">
+                                                    <h2>Tu CTO</h2>
+                                                </div>
+                                                <p>Tu CTO, Abelardo León González, confía en ti para el nuevo proyecto
+                                                    que ha ganado en un concurso internacional para el holding hotelero
+                                                    hispano-hawaiano ALOHA-T (de aquí en adelante, el cliente), que
+                                                    quiere poner en marcha un hotel en Madrid. Durante esta reunión,
+                                                    el CTO te explica el <a href="#SEPC_Proyecto">proyecto a desarrollar.</a>
+                                                </p>
+                                            </section>
+                                            <section id="SEPC_Proyecto" style="margin-bottom: 300px">
+                                                <div class="card-body text-center">
+                                                    <h2>Proyecto a desarrollar</h2>
+                                                </div>
+                                                <p>
+                                                    Tras la reunión con el cliente, tu CTO se reúne contigo para
+                                                    darte una presentación y explicarte qué es lo que quiere el cliente.
+                                                    De forma resumida, te dice que el cliente quiere que le desarrolles
+                                                    los siguientes módulos para el sistema de gestión:
+                                                </p>
+                                                <ul>
+                                                    <li>Módulo Recepción.</li>
+                                                    <li>Módulo Gestión de Habitaciones.</li>
+                                                    <li>Módulo SIE (Sistema de Información Estadística).</li>
+                                                </ul>
+                                                <p>
+                                                    Después de presentarte la memoria ejecutiva, ahora tu CTO te presenta
+                                                    la técnica, un documento que recoge ciertas <a href="#SEPC_Recomendaciones">
+                                                    recomendaciones</a> para llevar a cabo tu labor.
+                                                </p>
+                                            </section>
+                                            <section id="SEPC_Recomendaciones" style="margin-bottom: 300px">
+                                                <div class="card-body text-center">
+                                                    <h2>Recomendaciones</h2>
+                                                </div>
+                                                <ol>
+                                                    <li>
+                                                        El CTO valorará MUY positivamente que las conversiones
+                                                        Cadena -> Número sean realizadas por algoritmos implementados
+                                                        por ti.
+                                                    </li>
+                                                    <li>Elige la mejor estructura de datos para alojarlos.</li>
+                                                    <li>Aplica las buenas prácticas de programación.</li>
+                                                    <li>Estructura la aplicación con base a los distintos módulos a
+                                                        implementar.
+                                                    </li>
+                                                    <li>Escribe un código fácil de leer y de comprender.</li>
+                                                    <li>El CTO sabe que quieres realizar flujogramas, pero te recomienda
+                                                        que te centres en la resolución del problema. Si tienes tiempo,
+                                                        y ganas, los flujogramas podrán formar parte del entregable
+                                                        de este proyecto. En caso de entregarlos, el CTO los valorará
+                                                        MUY positivamente.
+                                                    </li>
+                                                </ol>
+                                                <p>El CTO ha propuesto el siguiente programa de <a href="#SEPC_recompensas">
+                                                    recompensas por cada módulo que implementes.</a>
+                                                </p>
+                                            </section>
+                                            <section id="SEPC_recompensas" style="margin-bottom: 300px">
+                                                <div class="card">
+                                                    <div class="card-header">
+                                                        <h5 class="mb-0">Recompensas</h5>
+                                                    </div>
+
+                                                    <div class="table-responsive">
+                                                        <table class="table">
+                                                            <thead>
+                                                            <tr>
+                                                                <th>Funcionalidad</th>
+                                                                <th>Recompensa (puntos)</th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            <tr>
+                                                                <td>Módulo de gestión de habitaciones</td>
+                                                                <td>3</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Módulo de recepción: check-in</td>
+                                                                <td>3</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Módulo de recepción: check-out + petición de nuevo desarrollo</td>
+                                                                <td>2</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Módulo de SIE</td>
+                                                                <td>2</td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <!-- /basic table -->
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <h6>Módulo Recepción</h6>
+                            <fieldset>
+                                <div class="row">
+                                    <section>
+                                        <div class="card">
+                                            <div class="card-body text-center">
+                                                <h2>Introducción</h2>
+                                            </div>
+                                            <div class="card-body">
+                                                <section id="modulo_recepcion" style="margin-bottom: 300px">
+                                                    <p>El CTO te lleva a recepción para que conozcas cómo trabajan.</p>
+                                                    <p>El personal de recepción te explican que llevan a cabo dos tipos
+                                                        de registros y aprovechan para realizar peticiones para el nuevo
+                                                        desarrollo:
+                                                    </p>
+                                                    <ul>
+                                                        <li>El <a href="#check-in">check-in</a> (o registro de entrada de clientes).</li>
+                                                        <li>El <a href="#check-out">check-out</a> (o registro de salida de clientes).</li>
+                                                        <li><a href="#nuevas-operativas">Peticiones</a> para el nuevo desarrollo.</li>
+                                                    </ul>
+                                                </section>
+                                                <section id="check-in" style="margin-bottom: 300px">
+                                                    <header>
+                                                        <h2>Subsistema de check-in</h2>
+                                                    </header>
+                                                    <p>Durante el check-in se solicita los siguientes datos a los clientes:</p>
+                                                    <ul>
+                                                        <li>El documento de identidad: el NIF o el NIE.</li>
+                                                        <li>El nombre y los apellidos.</li>
+                                                        <li>Su nacionalidad.</li>
+                                                        <li>Si se quiere alojar en una habitación normal o prémium.</li>
+                                                        <li>Número de noches.</li>
+                                                        <li>Fecha del check-in.</li>
+                                                    </ul>
+                                                    <p>
+                                                        El personal de recepción informa de las siguientes
+                                                        <a href="#recepcion_check-in_restricciones">restricciones</a>.
+                                                    </p>
+                                                </section>
+                                                <section id="recepcion_check-in_restricciones" style="margin-bottom: 300px">
+                                                    <header>
+                                                        <h3>Restricciones en el check-in</h3>
+                                                    </header>
+                                                    <ul>
+                                                        <li>
+                                                            El sistema NO permitirá la introducción de los demás datos si
+                                                            el documento de identidad no es válido.
+                                                        </li>
+                                                        <li>
+                                                            El sistema NO validará el formato del documento de identidad.
+                                                        </li>
+                                                        <li>
+                                                            El sistema DEBE asegurar que el cliente elija entre los dos
+                                                            tipos de habitaciones indicados.
+                                                        </li>
+                                                        <li>
+                                                            El sistema DEBE registrar automáticamente la fecha del check-in
+                                                            con el formato "YYYYMMDD". Pon la fecha actual.
+                                                        </li>
+                                                        <li>
+                                                            El sistema NO validará las fechas introducidas.
+                                                        </li>
+                                                        <li>
+                                                            El sistema asigna a cada cliente una habitación en función de
+                                                            la categoría del cliente: si es prémium, le asignará una habitación
+                                                            de esta característica. Y así sucesivamente.
+                                                        </li>
+                                                        <li>
+                                                            El sistema asigna la habitación del tipo elegido por el cliente
+                                                            más cerca de la planta 0. Por ejemplo, si el cliente es prémium,
+                                                            y la habitación prémium de la primera planta está ocupada, entonces
+                                                            el sistema buscará la habitación prémium de la segunda planta.
+                                                        </li>
+                                                        <li>
+                                                            El sistema NO dará de alta al cliente si no hay habitaciones
+                                                            disponibles del tipo del cliente.
+                                                        </li>
+                                                        <li>
+                                                            El sistema DEBERÁ añadir el cliente a una lista de altas con
+                                                            independencia de si es prémium.
+                                                        </li>
+                                                    </ul>
+                                                    <p>
+                                                        El CTO te da un documento donde está el algoritmo oficial para la
+                                                        validación de los documentos de identidad requeridos.
+                                                    </p>
+                                                    <ul>
+                                                        <li><a href="#nif">Validar si el NIF es correcto.</a></li>
+                                                        <li><a href="#nie">Validar si el NIE es correcto.</a></li>
+                                                    </ul>
+                                                </section>
+                                                <section id="nif" style="margin-bottom: 300px">
+                                                    <header>
+                                                        <h3>Validación del NIF</h3>
+                                                    </header>
+                                                    <p>
+                                                        El formato del NIF es 8 dígitos + 1 letra.
+                                                    </p>
+                                                    <p>Estos son los pasos a seguir por el sistema para validar el NIF
+                                                        "89194561D".
+                                                    </p>
+                                                    <ol>
+                                                       <li>Extrae los dígitos: obtienes en este paso la cadena "89194561".</li>
+                                                       <li>Conviértela a un número: 89194561.[Recomendación#1].</li>
+                                                       <li>Halla el resto de la división de este número con 23: 9.</li>
+                                                       <li>Dirígete a esta <a href="#tabla">tabla</a> para determinar qué
+                                                            letra le corresponde al resto 9.
+                                                       </li>
+                                                       <li>Si la letra que le corresponde al resto 9 es la proporcionada por
+                                                            el cliente, entonces el NIF es correcto.
+                                                       </li>
+                                                    </ol>
+
+                                                </section>
+                                                <section id="nie" style="margin-bottom: 300px">
+                                                    <header>
+                                                        <h3>Validación del NIE</h3>
+                                                    </header>
+                                                    <p>
+                                                        El formato del NIE es 1 letra + 7 dígitos + 1 letra.
+                                                    </p>
+                                                    <p>Estos son los pasos a seguir por el sistema para validar el NIE
+                                                        "Y0132965Q".
+                                                    </p>
+                                                    <ol>
+                                                        <li>Sustituye la primera letra por su valor:
+                                                            <ul>
+                                                                <li>Si es una X, entonces su valor es 0.</li>
+                                                                <li>Si es una Y, entonces su valor es 1.</li>
+                                                                <li>Si es una Z, entonces su valor es 2.</li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>Reemplaza la letra inicial por su valor: "10132965Q".</li>
+                                                        <li>Extrae la parte numérica: obtienes en este paso la cadena "10132965".</li>
+                                                        <li>Conviértela a un número: 10132965.</li>
+                                                        <li>Halla el resto de la división de este número con 23: 16.</li>
+                                                        <li>Dirígete a esta <a href="#tabla">tabla</a> para determinar qué
+                                                            letra le corresponde al resto 16.
+                                                        </li>
+                                                        <li>Si la letra que le corresponde al resto 16 es la proporcionada
+                                                            por el cliente, entonces el NIE es correcto.
+                                                        </li>
+                                                    </ol>
+                                                </section>
+                                                <section id="tabla" style="margin-bottom: 300px">
+                                                    <header>
+                                                        <h3>Tablas de equivalencia</h3>
+                                                    </header>
+                                                    <!-- Striped rows -->
+                                                    <div class="card" style="margin-bottom: 100px">
+                                                        <div class="table-responsive">
+                                                            <table class="table table-striped">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>Si el resto es</td>
+                                                                        <td>0</td>
+                                                                        <td>1</td>
+                                                                        <td>2</td>
+                                                                        <td>3</td>
+                                                                        <td>4</td>
+                                                                        <td>5</td>
+                                                                        <td>6</td>
+                                                                        <td>7</td>
+                                                                        <td>8</td>
+                                                                        <td>9</td>
+                                                                        <td>10</td>
+                                                                        <td>11</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>su letra es</td>
+                                                                        <td>T</td>
+                                                                        <td>R</td>
+                                                                        <td>W</td>
+                                                                        <td>A</td>
+                                                                        <td>G</td>
+                                                                        <td>M</td>
+                                                                        <td>Y</td>
+                                                                        <td>F</td>
+                                                                        <td>P</td>
+                                                                        <td>D</td>
+                                                                        <td>X</td>
+                                                                        <td>B</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <!-- /striped rows -->
+                                                    <!-- Striped rows -->
+                                                    <div class="card">
+                                                        <div class="table-responsive">
+                                                            <table class="table table-striped">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>Si el resto es</td>
+                                                                        <td>12</td>
+                                                                        <td>13</td>
+                                                                        <td>14</td>
+                                                                        <td>15</td>
+                                                                        <td>16</td>
+                                                                        <td>17</td>
+                                                                        <td>18</td>
+                                                                        <td>19</td>
+                                                                        <td>20</td>
+                                                                        <td>21</td>
+                                                                        <td>22</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>su letra es</td>
+                                                                        <td>N</td>
+                                                                        <td>J</td>
+                                                                        <td>Z</td>
+                                                                        <td>S</td>
+                                                                        <td>Q</td>
+                                                                        <td>V</td>
+                                                                        <td>H</td>
+                                                                        <td>L</td>
+                                                                        <td>C</td>
+                                                                        <td>K</td>
+                                                                        <td>E</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <!-- /striped rows -->
+                                                </section>
+                                                <section id="check-out" style="margin-bottom: 300px">
+                                                    <header>
+                                                        <h2>Subsistema de check-out</h2>
+                                                    </header>
+                                                    <p>Durante el check-out, el sistema realizará las siguientes operaciones:</p>
+                                                    <ul>
+                                                        <li>Establecerá la habitación del cliente como "libre".</li>
+                                                        <li>Dará de baja al cliente:
+                                                            <ul>
+                                                                <li>Le quitará de la lista de altas.</li>
+                                                                <li>Le añadirá en la lista de clientes históricos junto
+                                                                con la fecha de salida.</li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                    No te olvides de las <a href="#nuevas-operativas">nuevas peticiones</a>
+                                                    del personal de recepción.
+                                                </section>
+                                                <section id="nuevas-operativas" style="margin-bottom: 300px">
+                                                    <header>
+                                                        <h2>Peticiones para el nuevo desarrollo</h2>
+                                                    </header>
+                                                    <p>Con el fin de modernizar el software que tienen, el personal de
+                                                    recepción te solicita las siguientes funcionalidades:</p>
+                                                    <ul>
+                                                        <li>
+                                                            Cada vez que se hace el check-in, el personal de recepción
+                                                            quiere ver el estado de ocupación del hotel. Para facilitarnos
+                                                            la tarea, nos enseña un esquema de cómo quieren que se muestre
+                                                            esta información de ocupación:
+                                                            <figure class="text-center">
+                                                                <img src="./assets/img/situacion_hotel.jpg" alt="Situación del hotel"/>
+                                                                <figcaption>Ejemplo de la situación del hotel</figcaption>
+                                                            </figure>
+                                                        </li>
+                                                    </ul>
+                                                    <p>El CTO se reúne contigo para indicarte cómo debes realizar esta
+                                                    operativa a nivel técnico:</p>
+                                                    <ul>
+                                                        <li>Las habitaciones libres las mostrarás con el texto "Libre" y
+                                                            en color verde. Las ocupadas con la palabra "Ocupada" y en rojo.
+                                                        </li>
+                                                    </ul>
+                                                    <p>El CTO te muestra esta imagen para que sepas cómo colorear texto en
+                                                        la consola de Java:
+                                                    </p>
+                                                    <figure class="text-center">
+                                                        <img src="./assets/img/colorear_texto_java.png"
+                                                             alt="Cómo colorear texto en la consola de Java"
+                                                             width="50%"
+                                                        />
+                                                        <figcaption>Cómo colorear texto en la consola de Java</figcaption>
+                                                    </figure>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </fieldset>
+
+                            <h6>Módulo Gestión de Habitaciones</h6>
+                            <fieldset>
+                                <div class="row">
+                                    <section id="conozcaElHotel_introduccion" style="margin-bottom: 380px;">
+                                        <div class="card-body text-center">
+                                            <h2>Introducción</h2>
+                                        </div>
+                                        <p>
+                                            Con el objetivo de que te familiarices con el hotel, el CTO te invita a pasar
+                                            un finde en él. Durante su estancia, el CTO te explica algunas características
+                                            con el fin de que comprendas bien su funcionamiento y, por lo tanto, hagas
+                                            un buen desarrollo.
+                                        </p>
+                                        <a href="#conozcaElHotel_hotel">Cómo es el hotel</a>
+                                    </section>
+                                    <section id="conozcaElHotel_hotel" style="margin-bottom: 380px;">
+                                        <header>
+                                            <h2>Características del hotel</h2>
+                                        </header>
+                                        <p>
+                                            El hotel consta de 5 plantas:
+                                        </p>
+                                        <ul>
+                                            <li>En la planta 0, o planta baja, se encuentra la recepción y otros servicios
+                                                como cafetería, un bar con música en directo y las oficinas del
+                                                <abbr title="Personal de Administración y Servicios">PAS</abbr>.
+                                            </li>
+                                            <li>
+                                                <p>En las plantas 1 hasta la 4 están las habitaciones.</p>
+                                                <ul>
+                                                    <li>Cada planta cuenta con 5 habitaciones, de las cuales 4 son normales y
+                                                        1 es prémium.</li>
+                                                    <li>Cada habitación es sencilla: solo puede ser ocupada por un cliente.</li>
+                                                </ul>
+                                            </li>
+                                            <li>En la planta 5, o terraza, se encuentra el lounge-bar y la piscina.</li>
+                                        </ul>
+                                        <p>
+                                            El CTO te comenta que solo vas a preocuparte de la gestión del alojamiento,
+                                            por lo que no debes tener en cuenta la existencia de las plantas 0 y 5: solo
+                                            de las plantas 1 a la 4.
+                                        </p>
+                                        <p>
+                                            El hotel no tiene previsto ampliar el número de plantas para alojar más
+                                            habitaciones.
+                                        </p>
+                                        <figure class="text-center">
+                                            <img src="./assets/img/hotel.jpg" alt="Hotel"/>
+                                            <figcaption>Esquema del hotel</figcaption>
+                                        </figure>
+                                        <a href="#conozcaElHotel_habitaciones">Cómo son las habitaciones</a>
+                                    </section>
+                                    <section id="conozcaElHotel_habitaciones" style="margin-bottom: 380px;">
+                                        <header>
+                                            <h2>Habitaciones del hotel</h2>
+                                        </header>
+                                        <p>
+                                            Durante vuestro paseo por las plantas de alojamiento, el CTO te cuenta que hay
+                                            dos tipos de habitaciones:
+                                        </p>
+                                        <ul>
+                                            <li>Normal</li>
+                                            <li>Prémium</li>
+                                        </ul>
+                                        <p>Cada habitación cuenta con los siguientes datos:</p>
+                                        <ul>
+                                            <li>
+                                                <p>
+                                                    Número: este es único en todo el hotel. El formato de su numeración
+                                                    difiere si es normal o prémium.
+                                                </p>
+                                                <ul>
+                                                    <li>
+                                                        Habitación normal: Está formado por 2 dígitos: el de la planta
+                                                        donde se encuentra la habitación y el que informa del orden de
+                                                        la habitación en la planta. Por ejemplo, la primera habitación de
+                                                        la primera planta tiene el número "10". Y así sucesivamente.
+                                                    </li>
+                                                    <li>
+                                                        Habitación prémium: Está formado por 3 dígitos: la letra "P" (de
+                                                        "prémium"), el de la planta donde se encuentra la habitación y el
+                                                        que informa del orden de la habitación en la planta. Por ejemplo,
+                                                        la habitación prémium de la primera planta tiene el número "P10".
+                                                        Y así sucesivamente.
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <p>
+                                                    Cada habitación cuenta con un servicio de aperitivos. La disponibilidad
+                                                    de estos está en función de si la habitación es normal o prémium.
+                                                </p>
+                                                <ul>
+                                                    <li>
+                                                        Habitación normal: solo tiene derecho a 2 aperitivos.
+                                                    </li>
+                                                    <li>
+                                                        Habitación prémium: cuenta con un número indeterminado de aperitivos
+                                                        durante la estancia.
+                                                    </li>
+                                                </ul>
+                                                <p>
+                                                    Tu CTO cuenta que cada aperitivo tiene un nombre y una cantidad.
+                                                    Un ejemplo de aperitivo es "Chocolatina" que solo cuenta con 2 tabletas.
+                                                    Otro es "Botella de vino" (1 botella). Y así sucesivamente.
+                                                </p>
+                                            </li>
+                                            <li>Nombre.</li>
+                                            <li>Los datos del cliente que ocupa esa habitación.</li>
+                                        </ul>
+                                    </section>
+                                </div>
+                            </fieldset>
+
+                            <h6>Módulo SIE</h6>
+                            <fieldset>
+                                <div class="row">
+                                    <section id="sie_listado_gastos" style="margin-bottom: 380px;">
+                                        <div class="card-body text-center">
+                                            <h2>Introducción</h2>
+                                        </div>
+                                        <p>
+                                            Con el objetivo de que puedan saber en tiempo real los gastos de cada cliente,
+                                            el dpto. de finanzas solicita que se incorpore un Sistema de Información Estadística;
+                                            es decir, un informe de gastos acorde con las siguientes
+                                            <a href="#sie_listado_tarifas">tarifas</a>.
+                                        </p>
+                                        <p>
+                                            El informe tiene que tener este <a href="#sie_listado_formato">formato</a>.
+                                        </p>
+                                    </section>
+                                    <section id="sie_listado_tarifas" style="margin-bottom: 380px;">
+                                        <div class="card-body text-center">
+                                            <h2>Tarifas</h2>
+                                        </div>
+                                        <!-- Pricing table -->
+                                        <div class="card">
+                                            <div class="table-responsive">
+                                                <table class="table table-hover table-striped table-bordered table-lg text-center">
+                                                    <thead>
+                                                    <tr>
+                                                        <th class="text-start">Plan</th>
+                                                        <th>
+                                                            <h6 class="my-1">Normal</h6>
+                                                        </th>
+                                                        <th>
+                                                            <h6 class="my-1">Prémium</h6>
+                                                        </th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td class="text-start">Precio por noche</td>
+                                                        <td>45 €</td>
+                                                        <td>75 €</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-start">Chocolatina</td>
+                                                        <td>3,50 €</td>
+                                                        <td>5,50 €</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-start">Botella de vino (1 L.)</td>
+                                                        <td>1,50 €</td>
+                                                        <td>5,00 €</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-start">Canapé</td>
+                                                        <td>4,50 €</td>
+                                                        <td>7,85 €</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <!-- /pricing table -->
+                                    </section>
+                                    <section id="sie_listado_formato" style="margin-bottom: 380px;">
+                                        <div class="mb-3">
+                                            <h2>Formato del informe</h2>
+                                            <p class="text-muted">
+                                                Con el objetivo de que tengamos una idea del formato, el CTO te proporciona
+                                                un ejemplo de informe.
+                                            </p>
+                                        </div>
+                                        <div class="card">
+                                            <div class="table-responsive">
+                                                <table class="table">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>Número de la habitación</th>
+                                                        <th>Nombre completo (nombre + apellidos)</th>
+                                                        <th>Fecha de alta</th>
+                                                        <th>Fecha de baja</th>
+                                                        <th>Gastos</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>10</td>
+                                                        <td>Fulanito Menganito</td>
+                                                        <td>20250224</td>
+                                                        <td>20250225</td>
+                                                        <td>300,00 €</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>11</td>
+                                                        <td>Adler Lester</td>
+                                                        <td>20250224</td>
+                                                        <td>20250225</td>
+                                                        <td>10,00 €</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>12</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>0,00 €</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Total</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>310,00 €</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <!-- /basic table -->
+                                        <!-- /pricing table -->
+                                    </section>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <!-- /starting step -->
+                <!-- /content area -->
+            </section>
+        </section>
+    </section>
+</main>
+<footer class="navbar navbar-sm navbar-footer border-top">
+    <div class="container-fluid">
+        <span>&copy; 2025 <a href="">Abelardo León González</a></span>
+    </div>
+    <!-- /footer -->
+</footer>
+</body>
+</html>

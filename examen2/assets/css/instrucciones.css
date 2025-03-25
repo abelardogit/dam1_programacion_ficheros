@@ -1,0 +1,29 @@
+i {
+    color: red;
+    font-weight: bold;
+}
+table {
+    margin: auto;
+    border-collapse:collapse;
+}
+
+table tr td {
+    border: solid #ccc 1px;
+    padding: 5px 7px;
+}
+
+table tr th {
+    border: none;
+    padding-top: 5px;
+}
+.button {
+    background-color: red;
+    text-align: center;
+}
+
+a .button {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size:1.5rem;
+}
