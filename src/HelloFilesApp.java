@@ -1,3 +1,5 @@
+import binario.BDCredentials;
+import binario.FicheroBinario;
 import model.Persona;
 import model.PersonaManager;
 import texto.HTMLFileManager;
@@ -37,7 +39,6 @@ public class HelloFilesApp {
     }
 
     private static void html() {
-        List<Persona> personas = getPersona();
         List<Persona> personas = PersonaManager.getPersona();
         HTMLFileManager.createHTML(personas);
     }
@@ -66,11 +67,20 @@ public class HelloFilesApp {
         }
     }
 
-        personas.add(new Persona("MrIncreible", 30));
-        personas.add(new Persona("MrsIncreible", 45));
-        personas.add(new Persona("BabyIncreible", 1));
-        personas.add(new Persona("Prozono", 20));
 
-        return personas;
+
+    private static void binary() {
+        BDCredentials myDBCredentials= new BDCredentials(
+                "url",
+                "user",
+                "password",
+                3306,
+                "database"
+        );
+
+        FicheroBinario.escribir(myDBCredentials);
+        BDCredentials misCredenciales = FicheroBinario.leer();
+
+        System.out.println(misCredenciales);
     }
 }
