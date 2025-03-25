@@ -1,8 +1,10 @@
 import binario.BDCredentials;
 import binario.FicheroBinario;
 import model.Persona;
+import model.PersonaManager;
 import texto.HTMLFileManager;
 import texto.TextFileManager;
+import texto.CSVFileManager;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -15,7 +17,6 @@ public class HelloFilesApp {
         csvWriter();
         csvReader();
 
-        binary();
     }
 
     private static void text() {
@@ -25,9 +26,7 @@ public class HelloFilesApp {
 
     private static void readText() {
         List<String> data = TextFileManager.read();
-        Iterator<String> itLines = data.iterator();
-        while(itLines.hasNext()) {
-            String line = itLines.next();
+        for (String line : data) {
             System.out.println(line);
         }
     }
@@ -44,8 +43,29 @@ public class HelloFilesApp {
         HTMLFileManager.createHTML(personas);
     }
 
-    private static List<Persona> getPersona() {
-        List<Persona> personas = new ArrayList<>();
+    private static void csvWriter() {
+        List<Persona> personas = PersonaManager.getPersona();
+        CSVFileManager.createCSV(personas);
+    }
+
+    private static void csvReader() {
+        List<Persona> personas = CSVFileManager.readCSV();
+
+        Iterator<Persona> itPersonas = personas.iterator();
+        boolean personaEncontrada = false; int i = 0;
+        Persona persona = null;
+        while(itPersonas.hasNext() && !personaEncontrada) {
+            persona = itPersonas.next();
+            if (persona.getFullName().equalsIgnoreCase("MrIncreible")) {
+                personaEncontrada = true;
+            }
+            i++;
+        }
+
+        if (personaEncontrada) {
+            System.out.println(persona);
+        }
+    }
 
 
 
